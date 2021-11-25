@@ -17,20 +17,20 @@ button.addEventListener("click", function(){
     switch (op.value){
  
         case "add":
-            p.innerText = (a+b)
+            resultat.innerText = (a+b)
         //   console.log(a + b)
         break;
         case "sub":
             
-            p.innerText = (a - b)
+            resultat.innerText = (a - b)
         break;
         case "multi":
             
-            p.innerText = (a * b)
+            resultat.innerText = (a * b)
         break;
         case "divi":
             
-            p.innerText = (a / b)
+            resultat.innerText = (a / b)
         break;
     }
 });
