@@ -1,24 +1,30 @@
-const num1 = document.getElementById("num1")
-const num2 = document.getElementById("num2")
-const option = document.getElementById("option")
+// koppla input 1 och 2 till js
+
+const a = document.getElementById("num1").value;
+const b = document.getElementById("num2").value;
+//coppla button och slection till js
+
+const op = document.getElementById("option")
 const button = document.getElementById("button")
 
-let num1 = 0;
-let num2 = 0;
-button.addEventListener("click", function(){   
 
-    switch (option){
-        case "+":
-          console.log(num1 + num2)
+//Skapa knappt som ska klicka igång uträkningen
+button.addEventListener("click", function(){ 
+
+
+//de olika räkne sätten
+    switch (op){
+        case "add":
+          console.log(a + b)
         break;
-        case "-":
-            console.log(num1 - num2)
+        case "sub":
+            console.log(a - b)
         break;
-        case "*":
-            console.log(num1 * num2)
+        case "multi":
+            console.log(a * b)
         break;
-        case "/":
-            console.log(num1 / num2)
+        case "divi":
+            console.log(a / b)
         break;
     }
 });
